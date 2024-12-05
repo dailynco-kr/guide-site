@@ -63,16 +63,19 @@
 
 참고 : [https://velog.io/@junsu1222/깃-컨벤션-및-깃-브랜치-전략](https://velog.io/@junsu1222/%EA%B9%83-%EC%BB%A8%EB%B2%A4%EC%85%98-%EB%B0%8F-%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)
 
+### 공통 
 - main : 출시 가능한 코드를 모아두는 브랜치
 - develop
     - 다음 버전 개발을 위한 코드를 모아두는 브랜치
     - main 에서 브랜치를 처음 생성하고 개발이 완료되면 main으로 머지
+ 
+### 방법 1. 
 - feature
     - 새로운 기능을 개발하기 위한 브랜치
     - develop 에서 브랜치를 생성하고, 기능 개발이 완료되면 develop으로 머지
     
     ```bash
-    git checkout -b feature/이름/기능명
+    git checkout -b feature/기능명
     ```
     
 - release
@@ -82,6 +85,18 @@
 - hotfix
     - 이미 배포된 버전에 문제가 발생했다면, Hotfix 브랜치를 사용하여 문제 해결
     - Main 브랜치에서 생성 → 문제 해결이 완료되면 Main과 Develop 브랜치에 둘 다 머지
+
+
+### 방법 2.
+ - 각자 이름으로 된 브랜치 생성 하여 작업
+    ```bash
+    git checkout -b 이름/기능명
+    ```
+### 방법 3. 
+ - 1번 2번 방식 합치기
+    ```bash
+    git checkout -b feature/이름/기능명
+    ```
 
 ## commit 컨벤션
 
