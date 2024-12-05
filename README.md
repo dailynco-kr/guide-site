@@ -5,7 +5,6 @@
 
 1. React 프로젝트 생성<br>
 `npx create-react-app your-project-name` <br>
-<br>
 혹시**vite** 를 사용할것이라면  <br>
 `npm create vite@latest my-vite-app`<br>
 `cd my-vite-app`<br>
